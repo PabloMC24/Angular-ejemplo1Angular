@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ejemplo1Angular';
+
+  pelicula={
+    titulo:'SpiderMan',
+    fechalanzamiento:new Date(),
+    precio: 235.76,
+
+  };
+
+  diplicarValor(x:number):number{
+    return x*2;
+  }
 }
+
+
