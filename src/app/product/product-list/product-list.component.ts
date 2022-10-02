@@ -9,22 +9,23 @@ export class ProductListComponent implements OnInit {
 
   imagewidth:number=72;
   imageMarge:number=2;
-  muetraImg:boolean=false;
+  muestraImg:boolean=false;
+  listFilter:string='';
   constructor() { }
-  mustraImagen():void{
-    this.muetraImg=!this.muetraImg;
+  muestraImagen():void{
+    this.muestraImg=!this.muestraImg;
   }
 
   products:IProducto[]=[
     {
-      "producto1":1,
+      "product1":1,
       "productName": 'Sentra',
       "description": 'auto familiar 4 puertas',
       'listFilter':'',
       "createDate": 'Mayo 21,++ 2011',
       "price":130000,
       "rating": 3.6,
-      "imageUrl":"",
+      "imageUrl":""
 
     },
     

@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './suma.component.html',
   styleUrls: ['./suma.component.css']
 })
+
 export class SumaComponent  {
   
   

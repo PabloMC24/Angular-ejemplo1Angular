@@ -1,0 +1,79 @@
+<div class="container" >
+    <div class="row"> 
+        <div class="col">
+            <div>
+
+                <!-- LOGO Y NOMBRE -->
+                <div class="card highlight-card card-small">
+            
+                    <div class="toolbar" role="banner">
+                        <img
+                        width="40"
+                        alt="Cinepolis Logo"
+                        src="https://www.roc21.com/blog/wp-content/uploads/2019/07/logo-cinepolis-dos.jpg"
+                        />
+            
+                        <span class="fa-align-center" aria-hidden="true"><h1>CINEPOLIS</h1></span>
+                        
+                </div>
+
+            </div>
+                
+            <p>Prueba</p>
+
+            <div >
+
+                    Nombre del usuario:
+                        <div >
+                            
+                            <input  [(ngModel)]="usuarioNombre" type="tet" class="form-control" name="input_Nombre">
+                        </div>
+            
+
+                    Cantidad de boletos:
+                        <div >
+                            
+                            <input [(ngModel)]="boleto"  type="tet" class="form-control" name="input_Nombre">
+                        </div>
+                    <br>
+                    <div class="col">
+                        <button  (click)="ValorCompra()" type="button" class="btn btn-primary">Calcular Precio</button>
+                    </div>
+
+                    <div>
+                        <br>
+                        <h3>¿Pagar con tarjeta CINECO?</h3>
+                        <div class="col-lg-13" >
+                        <h6>Selecciona check para aceptar: </h6>
+                        </div>
+                        <input class="col-lg-13" type="checkbox" name="input_Tarjeta" [(ngModel)]="targetaCine" > 
+                        <!-- No<input class="col-lg-1" type="radio" name="input_Tarjeta" [(ngModel)]="targetaCine"> -->   
+                        
+                    </div>
+
+            </div>
+        </div>
+        <br>
+        <div>
+            <h4>Estimado {{usuarioNombre}}, usted va a pagar:<br> </h4>
+            <h2>{{simbolo}} {{valorCompraFinal}}</h2>
+            <h3>{{losiento}}</h3>
+            
+        </div>
+
+
+    </div>
+    <br>
+   <div class="col">
+        <h2>¡Hola {{usuarioNombre}}!</h2><br>
+        <h3>¡Tenemos promociones para ti y los que te rodean!</h3> <br>
+        <p>1- Si compras 5 boletos, obtienes un 15% de descuento <br>
+        2- Si compras 3 a 5 boltos, obtienes un 10% de descuento.<br>
+        3- Si compras con tu tarjeta CINECO, obtienes un 10% de descuento adicional a las anteriores.<br></p>
+    </div>
+    <hr>
+    <div>
+        <button style="background-color:red; background-origin:blue" class="col-md-2"  type="button" class="btn btn-primary">Atrás</button>
+        <button class="col-md-2" type="button" class="btn btn-primary">Siguiente</button>
+    </div>
+</div>
